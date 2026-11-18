@@ -1,0 +1,63 @@
+@host = http://localhost:5128
+
+### 201 Created (fabricId omitido => Algodon = 1)
+POST {{host}}/api/v1/purchase-orders
+Content-Type: application/json
+
+{
+  "customer": "Zara",
+  "poNumber": "PO-0001",
+  "vendor": "Hialpesa",
+  "shipTo": "Lima, Peru",
+  "quantity": 100
+}
+
+### 201 Created (fabricId = 5 => Nailon)
+POST {{host}}/api/v1/purchase-orders
+Content-Type: application/json
+
+{
+  "customer": "Zara",
+  "poNumber": "PO-0002",
+  "fabricId": 5,
+  "vendor": "Hialpesa",
+  "shipTo": "Lima, Peru",
+  "quantity": 250
+}
+
+### 409 Conflict (mismo customer + poNumber)
+POST {{host}}/api/v1/purchase-orders
+Content-Type: application/json
+
+{
+  "customer": "Zara",
+  "poNumber": "PO-0001",
+  "vendor": "Hialpesa",
+  "shipTo": "Lima, Peru",
+  "quantity": 100
+}
+
+### 400 Bad Request (customer con menos de 4 caracteres)
+POST {{host}}/api/v1/purchase-orders
+Content-Type: application/json
+
+{
+  "customer": "H&M",
+  "poNumber": "PO-0003",
+  "vendor": "Hialpesa",
+  "shipTo": "Lima, Peru",
+  "quantity": 10
+}
+
+### 400 Bad Request (fabricId fuera del enum)
+POST {{host}}/api/v1/purchase-orders
+Content-Type: application/json
+
+{
+  "customer": "Zara",
+  "poNumber": "PO-0004",
+  "fabricId": 9,
+  "vendor": "Hialpesa",
+  "shipTo": "Lima, Peru",
+  "quantity": 10
+}

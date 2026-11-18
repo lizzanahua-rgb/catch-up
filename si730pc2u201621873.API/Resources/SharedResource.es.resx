@@ -1,0 +1,93 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="PurchaseOrderDuplicated" xml:space="preserve">
+        <value>Ya existe una purchase order con este customer y PO number.</value>
+    </data>
+    <data name="UnexpectedServerError" xml:space="preserve">
+        <value>Error inesperado del servidor</value>
+    </data>
+    <data name="UnexpectedErrorCreatingPurchaseOrder" xml:space="preserve">
+        <value>Ocurrió un error inesperado al crear la purchase order.</value>
+    </data>
+    <data name="UnexpectedErrorProcessingRequest" xml:space="preserve">
+        <value>Ocurrió un error inesperado al procesar su solicitud.</value>
+    </data>
+    <data name="InvalidModelStateTitle" xml:space="preserve">
+        <value>La solicitud contiene valores no válidos.</value>
+    </data>
+    <data name="RequiredCustomer" xml:space="preserve">
+        <value>El customer es obligatorio.</value>
+    </data>
+    <data name="RequiredPoNumber" xml:space="preserve">
+        <value>El PO number es obligatorio.</value>
+    </data>
+    <data name="RequiredVendor" xml:space="preserve">
+        <value>El vendor es obligatorio.</value>
+    </data>
+    <data name="RequiredShipTo" xml:space="preserve">
+        <value>El shipTo es obligatorio.</value>
+    </data>
+    <data name="RequiredQuantity" xml:space="preserve">
+        <value>La quantity es obligatoria.</value>
+    </data>
+    <data name="CreatePurchaseOrderSummary" xml:space="preserve">
+        <value>Crear una purchase order</value>
+    </data>
+    <data name="CreatePurchaseOrderDescription" xml:space="preserve">
+        <value>Crea una purchase order. Customer y vendor deben tener de 4 a 50 caracteres, customer y PO number deben ser únicos en conjunto, y fabricId (1 a 8) es Algodon si se omite.</value>
+    </data>
+    <data name="CreatePurchaseOrderCreated" xml:space="preserve">
+        <value>Se creó la purchase order.</value>
+    </data>
+    <data name="CreatePurchaseOrderBadRequest" xml:space="preserve">
+        <value>El cuerpo de la solicitud no es válido.</value>
+    </data>
+    <data name="CreatePurchaseOrderConflict" xml:space="preserve">
+        <value>La purchase order ya existe.</value>
+    </data>
+    <data name="CreatePurchaseOrderServerError" xml:space="preserve">
+        <value>Ocurrió un error inesperado en el servidor.</value>
+    </data>
+    <data name="CreatePurchaseOrderSchema" xml:space="preserve">
+        <value>Datos de la solicitud para crear una purchase order.</value>
+    </data>
+    <data name="PurchaseOrderSchema" xml:space="preserve">
+        <value>Una purchase order devuelta por la API.</value>
+    </data>
+    <data name="PurchaseOrderId" xml:space="preserve">
+        <value>El identificador de la purchase order generado por el servidor.</value>
+    </data>
+    <data name="PurchaseOrderCustomer" xml:space="preserve">
+        <value>El customer que emitió la purchase order (de 4 a 50 caracteres).</value>
+    </data>
+    <data name="PurchaseOrderPoNumber" xml:space="preserve">
+        <value>El PO number que el customer maneja de manera interna.</value>
+    </data>
+    <data name="PurchaseOrderFabricId" xml:space="preserve">
+        <value>El identificador del fabric: 1 Algodon, 2 Modal, 3 Elastano, 4 Poliester, 5 Nailon, 6 Acrilico, 7 Rayon, 8 Lyocell.</value>
+    </data>
+    <data name="PurchaseOrderVendor" xml:space="preserve">
+        <value>El vendor de la purchase order (de 4 a 50 caracteres).</value>
+    </data>
+    <data name="PurchaseOrderShipTo" xml:space="preserve">
+        <value>El destino de envío.</value>
+    </data>
+    <data name="PurchaseOrderQuantity" xml:space="preserve">
+        <value>La cantidad ordenada.</value>
+    </data>
+</root>
